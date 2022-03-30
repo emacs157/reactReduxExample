@@ -1,4 +1,6 @@
-export const mockRedux: any = {
+import { ReduxState } from '../assets/interface';
+
+export const mockRedux: ReduxState = {
     Prefectures: {
         status: 'success',
         results: [

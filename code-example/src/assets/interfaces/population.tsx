@@ -1,4 +1,8 @@
 import { STATUS } from '../literal';
+export interface GetPopulationResponse {
+    message: null | string;
+    result: PopulationResult;
+}
 
 export interface PopulationResult {
     boundaryYear: number;

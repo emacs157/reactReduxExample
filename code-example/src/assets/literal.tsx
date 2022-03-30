@@ -5,6 +5,7 @@ export const STATUS = {
     RUNNING: 'running',
     SUCCESS: 'success',
 };
+
 export const PREF_OPTIONS = [
     '北海道',
     '青森県',
