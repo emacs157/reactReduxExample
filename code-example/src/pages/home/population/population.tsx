@@ -1,5 +1,6 @@
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
+import { PopulationState } from '../../../assets/interfaces/population';
 import React from 'react';
 
 export const options = {
@@ -45,7 +46,9 @@ export const options = {
         ],
     },
 };
-const PopulationComponent = (props: { population: any }): JSX.Element => {
+const PopulationComponent = (props: {
+    population: PopulationState;
+}): JSX.Element => {
     return (
         <HighchartsReact
             highcharts={Highcharts}

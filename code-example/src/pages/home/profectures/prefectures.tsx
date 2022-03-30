@@ -1,8 +1,13 @@
 import { Checkbox, FormControlLabel, Grid, Paper } from '@mui/material';
+import { PopulationState } from '../../../assets/interfaces/population';
+import {
+    PrefectureResult,
+    PrefecturesState,
+} from '../../../assets/interfaces/prefectures';
 
 const PrefecturesComponent = (props: {
-    prefectures: any;
-    population: any;
+    prefectures: PrefecturesState;
+    population: PopulationState;
 }): JSX.Element => {
     return (
         <>
@@ -12,7 +17,10 @@ const PrefecturesComponent = (props: {
                         <Grid container>
                             {props.prefectures.results &&
                                 props.prefectures.results.map(
-                                    (prefecture: any, index: number) => (
+                                    (
+                                        prefecture: PrefectureResult,
+                                        index: number
+                                    ) => (
                                         <Grid item key={index}>
                                             <FormControlLabel
                                                 style={{
